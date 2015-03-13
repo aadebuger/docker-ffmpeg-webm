@@ -67,7 +67,7 @@ RUN git clone git://git.opus-codec.org/opus.git \
     && rm -rf /tmp/opus
 
 ## libvpx
-RUN git clone https://chromium.googlesource.com/webm/libvpx \
+RUN git clone https://github.com/webmproject/libvpx \
     && cd libvpx \
     && ./configure --disable-shared \
     && make -j`getconf _NPROCESSORS_ONLN` \
